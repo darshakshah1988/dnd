@@ -1,5 +1,6 @@
 <?php
 
+
 $name=$_POST["name"];
 $email=$_POST["email"];
 $message=$_POST["message"];
@@ -39,8 +40,8 @@ $message = "
 </html>
 ";
 
+
 mail($to,$subject,$message,$headers);
 
 header("location:index.html");
-
 ?>
